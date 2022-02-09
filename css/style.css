@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Old Standard TT', serif;
+}
+.navbar{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+.brand{
+    font-size: 2.5rem;
+    background: rgb(34,43,195);
+    background: linear-gradient(90deg, rgba(34,43,195,1) 0%, rgba(181,45,253,1) 100%);
+    padding: 5%;
+    border-radius: 20px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.brand:hover{
+    font-size: 2.7rem;
+}
+.carousel-item img{
+    height: 35vw;
+    object-fit: cover;
+}
+.img1{
+    object-position: 0 -450px;
+}
+.img3{
+    object-position: 0 -525px;
+}
+#onama{
+    margin-top: 110px;
+}
