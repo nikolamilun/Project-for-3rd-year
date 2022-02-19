@@ -31,7 +31,7 @@
                 <a class="nav-link" href="#onama">О Нама</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Галерија</a>
+                <a class="nav-link" href="#galerija">Галерија</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Контакт</a>
@@ -42,7 +42,7 @@
         <button class="nav-item izvori btn btn-primary me-3">Извори</button>
     </nav>
     <!-- Image slider -->
-    <section id="onama">
+    <section id="slidersection">
         <div id="slider" class="carousel slide" data-bs-ride="slider">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,7 +70,8 @@
             </button>
           </div>
     </section>
-    <section class="my-5">
+    <!-- About us -->
+    <section class="my-5" id="onama">
         <div class="container p-3 border border-primary rounded-3">
             <h1 class="text-center">О нама</h1>
             <div class="row my-1 p-2">
@@ -80,7 +81,7 @@
             </div>
             <div class="row my-1">
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <img src="images/onama.jpg" alt="O nama" class="w-50">
+                    <img src="images/onama.jpg" alt="O nama" class="w-50 border rounded border-dark">
                 </div>
                 <div class="col-md-6">
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error labore sit itaque dolores optio, officiis atque ab accusantium recusandae voluptatibus commodi nostrum veritatis aut adipisci fuga? Nobis distinctio ea, at ad labore quam quis inventore quae mollitia aut veniam pariatur esse quia ipsum nulla ratione! Illum officia cupiditate deleniti.
@@ -92,12 +93,72 @@
             </div>
         </div>
     </section>
+    <!-- Gallery -->
+    <section class="my-5" id="galerija">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center my-2">Галерија</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal1.jpg" alt="Slika 1" class="img-fluid rounded border border-3" onclick="otvoriModal(1)">
+            </button>
+          </div>
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal2.jpg" alt="Slika 2" class="img-fluid rounded border border-3" onclick="otvoriModal(2)">
+            </button>
+          </div>
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal3.jpg" alt="Slika 3" class="img-fluid rounded border border-3" onclick="otvoriModal(3)">
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal4.jpg" alt="Slika 4" class="img-fluid rounded border border-3" onclick="otvoriModal(4)">
+            </button>
+          </div>
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal5.jpg" alt="Slika 5" class="img-fluid rounded border border-3" onclick="otvoriModal(5)">
+            </button>
+          </div>
+          <div class="col-md-4 p-2">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal6.jpg" alt="Slika 6" class="img-fluid rounded border border-3" onclick="otvoriModal(6)">
+            </button>
+          </div>
+        </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="images/gal1.jpg" alt="Slika" id="modalimg" class="img-fluid">
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Zatvori</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer with copyright -->
     <footer>
         Image by <a href="https://pixabay.com/users/toanmda-439975/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=443600">Vu Toan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=443600">Pixabay</a>
         Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2595862">StockSnap</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2595862">Pixabay</a>
         Image by <a href="https://pixabay.com/users/olcayertem-2028938/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6600904">olcay ertem</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6600904">Pixabay</a>
         Image by <a href="https://pixabay.com/users/sfetfedyhghj-2834867/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486256">sfetfedyhghj</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486256">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/sfetfedyhghj-2834867/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486242">sfetfedyhghj</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486242">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/sfetfedyhghj-2834867/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486247">sfetfedyhghj</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1486247">Pixabay</a>
+        Image by <a href="https://pixabay.com/users/k_seergeevna-9616515/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3554048">Ksenia Sergeeva</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3554048">Pixabay</a>
+        <a href='https://www.freepik.com/photos/wedding'>Wedding photo created by cookie_studio - www.freepik.com</a>
+        Image by <a href="https://pixabay.com/users/victoria_borodinova-6314823/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2859814">Press 👍👍 Love you 💖</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2859814">Pixabay</a>
     </footer>
     <!-- Script tags -->
     <script src="js/wow.min.js"></script>
