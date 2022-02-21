@@ -10,6 +10,9 @@ body{
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
 }
+.modal-body p{
+    display: block;
+}
 .brand{
     font-size: 2.5rem;
     background: rgb(34,43,195);
@@ -22,15 +25,24 @@ body{
     font-size: 2.7rem;
 }
 .carousel-item img{
-    height: 35vw;
+    height: 40vw;
     object-fit: cover;
 }
-.img1{
-    object-position: 0 -450px;
-}
-.img3{
-    object-position: 0 -525px;
+@media screen and (min-width: 1200px) {
+    .img1{
+        object-position: 0 -450px;
+    }
+    .img3{
+        object-position: 0 -525px;
+    }
+    .lista{
+        display: block;
+    }
 }
 #slidersection{
     margin-top: 110px;
+}
+footer{
+    background-color: rgb(163, 221, 255);
+
 }
