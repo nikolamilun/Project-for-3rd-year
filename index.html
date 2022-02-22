@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Css tags -->
+    <!-- CSS tags -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -18,32 +18,32 @@
     <!-- Main menu -->
     <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
         <div class="container-fluid p-2">
-          <a class="navbar-brand" href="#"><span class="brand">Бидермајер</span></a>
+          <a class="navbar-brand animate__animated animate__fadeInRight" href="#"><span class="brand">Бидермајер</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mainmenu">
             <ul class="navbar-nav position-absolute top-50 start-50 translate-middle lista">
-              <li class="nav-item my-1">
-                <a class="nav-link active" aria-current="page" href="#">Почетак</a>
+              <li class="nav-item">
+                <a class="nav-link mx-2 my-auto active animate__animated animate__bounce" aria-current="page" href="#">Почетак</a>
               </li>
-              <li class="nav-item my-1">
-                <a class="nav-link" href="#onama">О Нама</a>
+              <li class="nav-item">
+                <a class="nav-link mx-2 my-auto animate__animated animate__bounce" href="#onama">О Нама</a>
               </li>
-              <li class="nav-item my-1">
-                <a class="nav-link" href="#galerija">Галерија</a>
+              <li class="nav-item">
+                <a class="nav-link mx-3 my-auto animate__animated animate__bounce" href="#galerija">Галерија</a>
               </li>
-              <li class="nav-item my-1">
-                <a class="nav-link" href="#kontakt">Контакт</a>
+              <li class="nav-item">
+                <a class="nav-link mx-3 my-auto animate__animated animate__bounce" href="#kontakt">Контакт</a>
               </li>
               <li>
-                <button type="button" class="nav-item izvori btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#credits">Извори</button>
-                <!-- Modal -->
+                <button type="button" class="nav-item izvori btn btn-primary px-4 my-auto mx-2 animate__animated animate__bounce" data-bs-toggle="modal" data-bs-target="#credits">Извори</button>
               </li>
             </ul>
           </div>
         </div>
     </nav>
+    <!-- Modal for credits-->
     <div class="modal fade" id="credits" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -98,22 +98,22 @@
           </div>
     </section>
     <!-- About us -->
-    <section class="my-5" id="onama">
+    <section id="onama">
         <div class="container p-3 border border-primary rounded-3">
-            <h1 class="text-center">О нама</h1>
+            <h1 class="text-center animate__animated animate__backInDown wow" data-wow-offset="10" data-wow-delay = "0.5s">О нама</h1>
             <div class="row my-1 p-2">
-                <p class="text-center">
+                <p class="text-center animate__animated animate__backInUp wow" data-wow-offset="10" data-wow-delay = "0.5s">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quam non ex maiores nemo velit obcaecati quos dolorum nobis minima consectetur expedita enim? Natus iste praesentium numquam magnam in maiores velit, saepe minima? Recusandae eveniet ullam officia dignissimos, possimus, consectetur earum obcaecati nesciunt quaerat excepturi minus officiis, saepe nobis assumenda?
                 </p>
             </div>
             <div class="row my-1">
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <img src="images/onama.jpg" alt="O nama" class="w-50 border rounded border-dark">
+                    <img src="images/onama.jpg" alt="O nama" class="w-50 border rounded border-dark animate__animated animate__backInLeft wow" data-wow-offset="10" data-wow-delay = "1s">
                 </div>
                 <div class="col-md-6">
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error labore sit itaque dolores optio, officiis atque ab accusantium recusandae voluptatibus commodi nostrum veritatis aut adipisci fuga? Nobis distinctio ea, at ad labore quam quis inventore quae mollitia aut veniam pariatur esse quia ipsum nulla ratione! Illum officia cupiditate deleniti.
+                    <p class="text-center animate__animated animate__backInRight wow" data-wow-offset="10" data-wow-delay = "1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error labore sit itaque dolores optio, officiis atque ab accusantium recusandae voluptatibus commodi nostrum veritatis aut adipisci fuga? Nobis distinctio ea, at ad labore quam quis inventore quae mollitia aut veniam pariatur esse quia ipsum nulla ratione! Illum officia cupiditate deleniti.
                     </p>
-                    <p class="mt-5">
+                    <p class="mt-5 animate__animated animate__backInRight wow" data-wow-offset="10" data-wow-delay = "1s">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit iusto dolor, omnis, autem aperiam minima doloremque excepturi cumque officiis, optio minus praesentium assumenda voluptates. Tempora, laborum ab. Sapiente debitis voluptatibus accusantium, modi officiis, esse atque impedit tenetur earum, quidem hic veritatis. Sit iste beatae quia impedit ipsam, esse in.
                     </p>
                 </div>
@@ -121,46 +121,48 @@
         </div>
     </section>
     <!-- Gallery -->
-    <section class="my-5" id="galerija">
+    <section id="galerija">
       <div class="container">
         <div class="row">
-          <h1 class="text-center my-2">Галерија</h1>
+          <!-- Gallery heading -->
+          <h1 class="text-center my-2 animate__animated animate__swing" data-wow-offset="10" data-wow-delay = "0.5s">Галерија</h1>
         </div>
         <div class="row">
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/gal1.jpg" alt="Slika 1" class="img-fluid rounded border border-3" onclick="otvoriModal(1);">
+          <!-- Image gallery -->
+          <div class="col-md-4 p-2 animate__animated animate__backInLeft wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal1.jpg" alt="Slika 1" class="img-fluid rounded border border-3 galimg" onclick="otvoriModal(1);">
             </button>
           </div>
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="otvoriModal(2);">
-              <img src="images/gal2.jpg" alt="Slika 2" class="img-fluid rounded border border-3" >
+          <div class="col-md-4 p-2 animate__animated animate__backInLeft wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="otvoriModal(2);">
+              <img src="images/gal2.jpg" alt="Slika 2" class="img-fluid rounded border border-3 galimg" >
             </button>
           </div>
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/gal3.jpg" alt="Slika 3" class="img-fluid rounded border border-3" onclick="otvoriModal(3);">
+          <div class="col-md-4 p-2 animate__animated animate__backInLeft wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal3.jpg" alt="Slika 3" class="img-fluid rounded border border-3 galimg" onclick="otvoriModal(3);">
             </button>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/gal4.jpg" alt="Slika 4" class="img-fluid rounded border border-3" onclick="otvoriModal(4);">
+          <div class="col-md-4 p-2 animate__animated animate__backInRight wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal4.jpg" alt="Slika 4" class="img-fluid rounded border border-3 galimg" onclick="otvoriModal(4);">
             </button>
           </div>
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/gal5.jpg" alt="Slika 5" class="img-fluid rounded border border-3" onclick="otvoriModal(5);">
+          <div class="col-md-4 p-2 animate__animated animate__backInRight wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal5.jpg" alt="Slika 5" class="img-fluid rounded border border-3 galimg" onclick="otvoriModal(5);">
             </button>
           </div>
-          <div class="col-md-4 p-2">
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/gal6.jpg" alt="Slika 6" class="img-fluid rounded border border-3" onclick="otvoriModal(6);">
+          <div class="col-md-4 p-2 animate__animated animate__backInRight wow" data-wow-offset="10" data-wow-delay="1s">
+            <button type="button" class="imgbox" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/gal6.jpg" alt="Slika 6" class="img-fluid rounded border border-3 galimg" onclick="otvoriModal(6);">
             </button>
           </div>
         </div>
-      <!-- Modal -->
+      <!-- Modal for image gallery-->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -176,35 +178,43 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="kontakt" class="m-5 p-4 border border-active border-3">
-      <div class="row">
-        <h1 class="text-center my-2 p-3">Контакт</h1>
-      </div>
-      <div class="row">
-        <p class="text-center">Мобилни: 06џ/џџџ-џџџџ</p>
-        <p class="text-center">Фиксни: 021/џџџ-џџџ</p>
-        <p class="text-center">Мејл: примермејла@gmail.com</p>
-      </div>
-      <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47273.23737724605!2d20.699578316401166!3d42.22347733510014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353950a12f4301f%3A0xda0e2e9b8d3d5850!2z0J_RgNC40LfRgNC10L0!5e0!3m2!1ssr!2srs!4v1645432305258!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="kontakt" class="justify-content-center" style="padding-top: 110px;">
+      <div class="container-fluid border border-active border-3 mx-auto p-4">
+        <div class="row">
+          <!-- Header -->
+          <h1 class="text-center my-2 p-3 animate__animated animate__tada wow" data-wow-offset="10" data-wow-delay="0.5s">Контакт</h1>
+        </div>
+        <div class="row">
+          <!-- Contact data -->
+          <p class="text-center animate__animated animate__shakeY wow" data-wow-offset="10" data-wow-delay="1s">Адреса: НекоТамоМесто НекаУлица 6</p>
+          <p class="text-center animate__animated animate__shakeY wow" data-wow-offset="10" data-wow-delay="1s">Мобилни: 06џ/џџџ-џџџџ</p>
+          <p class="text-center animate__animated animate__shakeY wow" data-wow-offset="10" data-wow-delay="1s">Фиксни: 021/џџџ-џџџ</p>
+          <p class="text-center animate__animated animate__shakeY wow" data-wow-offset="10" data-wow-delay="1s">Мејл: примермејла@gmail.com</p>
+        </div>
+        <div class="row">
+          <!-- Google maps embed -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47273.23737724605!2d20.699578316401166!3d42.22347733510014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353950a12f4301f%3A0xda0e2e9b8d3d5850!2z0J_RgNC40LfRgNC10L0!5e0!3m2!1ssr!2srs!4v1645432305258!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
     </section>
     <!-- Footer with copyright -->
     <footer class="p-5 mt-5">
         <div class="row">
           <div class="col-lg-6">
-            <p class="fs-3 text-center">Сајт направио Никола Милун</p>
-            <p class="fs-3 text-center">Сва права задржана</p>
+            <!-- Made by -->
+            <p class="fs-3 text-center animate__animated animate__fadeInLeft wow" data-wow-offset="10" data-wow-delay="0.5s">Сајт направио Никола Милун</p>
+            <p class="fs-3 text-center animate__animated animate__fadeInLeft wow" data-wow-offset="10" data-wow-delay="0.5s">Сва права задржана</p>
           </div>
           <div class="col-lg-6">
-            <p class="text-center fs-4">Друштвене мреже: </p>
-            <p class="text-center fs-2">
-              <a href="https://www.facebook.com/" class="my-2 p-1" style="color: blue;"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/" class="my-2 p-1" style="color: rgb(255, 147, 165);"><i class="bi bi-instagram "></i></a>
-              <a href="https://www.pinterest.com/" class="my-2 p-1" style="color: red;"><i class="bi bi-pinterest"></i></a>
-              <a href="https://twitter.com/home" class="my-2 p-1" style="color: rgb(20, 160, 207);"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.youtube.com/" class="my-2 p-1" style="color: red;"><i class="bi bi-youtube"></i></a>
-            </p>
+            <!-- Social media -->
+            <p class="text-center fs-4 animate__animated animate__fadeInRight wow" data-wow-offset="10" data-wow-delay="0.5s">Друштвене мреже: </p>
+            <div class="text-center fs-2  animate__animated animate__tada wow" data-wow-delay="1.5s" data-wow-offset="10">
+              <a href="https://www.facebook.com/" class="my-2" style="color: blue;"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" class="my-2" style="color: rgb(255, 147, 165);"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.pinterest.com/" class="my-2" style="color: red;"><i class="bi bi-pinterest d"></i></a>
+              <a href="https://twitter.com/home" class="my-2" style="color: rgb(20, 160, 207);"><i class="bi bi-twitter d"></i></a>
+              <a href="https://www.youtube.com/" class="my-2" style="color: red;"><i class="bi bi-youtube d"></i></a>
+            </div>
           </div>
         </div>
     </footer>
