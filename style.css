@@ -33,15 +33,12 @@ body{
 .carousel-item img{
     height: 40vw;
     object-fit: cover;
+    object-position: bottom;
 }
-@media screen and (min-width: 1200px) {
-    .img1{
-        object-position: 0 -450px;
+@media screen and (min-width: 900px) {
+    .mainmenu{
+        margin-left: 16vw;
     }
-    .img3{
-        object-position: 0 -500px;
-    }
-    
 }
 #slidersection{
     margin-top: 57px;
