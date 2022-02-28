@@ -12,6 +12,7 @@ function otvoriModal(br){
 navLinks.forEach(item => item.addEventListener('click', function() {
     navbarMenu.classList.remove('show');
 }))
+//Page scroll indicator
 function getPerc(){
     let rez = Math.round(window.scrollY / (document.body.offsetHeight - window.innerHeight) * 100);
     if(rez > 100)

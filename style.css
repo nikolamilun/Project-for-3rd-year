@@ -53,6 +53,14 @@ body{
 .galimg:hover{
     transform: scale(1.1);
 }
+/* Reviews section */
+.reviews{
+    background-image: url(images/reviewsbg.jpg);
+    background-color: grey;
+    background-attachment: fixed;
+    object-fit: contain;
+    background-blend-mode: lighten;
+}
 /* Footer */
 footer{
     background-color: rgb(163, 221, 255);
